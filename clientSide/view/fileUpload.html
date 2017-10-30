@@ -1,0 +1,31 @@
+
+<div class="navbar navbar-default" data-ng-controller="UploadController">
+        <div class="container-fluid" style="background:#01aef3;color:white;">
+            <div class="navbar-header">
+                <a class="navbar-brand whiteText" href="#" style="color:white">
+                    <strong>ABC Software Systems</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Create a form -->
+    <div id="formDiv" class="container" style="padding: 10px; paddidata-ng-top: 2px; margin-top: 2%">
+        <div class="row">
+            <!--Create field for uploading an image-->
+            <div class="col-sm-12">
+                <h4><strong>Upload a Image File to convert Base64 Format</strong></h4>
+                <div class="form-group has-feedback">
+                    <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" accept="image/*;capture=camera" name="userPhoto" single />
+                    <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+                </div>
+               
+                <!--Create a button-->
+                <button data-ng-click="upload()">Upload</button>
+                <!--Used to Display Decode Image-->
+                <div class="container">
+                    <img id="preview" src="" class="img-responsive" style="display: none;">
+                    <button data-ng-click="uploadview()">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
